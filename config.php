@@ -48,3 +48,17 @@ define('DEFAULT_LANG', 'cz');
 
 // Měna
 define('CURRENCY', 'CZK');
+<?php
+$servername = "sql206.ezyro.com";  // host
+$username   = "ezyro_40043860";    // MySQL uživatel
+$password   = "TVÉ_HESLO";         // stejné jako do vPanelu
+$dbname     = "ezyro_40043860_topeshop"; // název databáze
+
+// Připojení k databázi
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Kontrola spojení
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+?>
